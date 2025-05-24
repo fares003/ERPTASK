@@ -12,7 +12,7 @@ function SkuQrCodeScanner() {
           <BarcodeScanner
             width={400}
             height={400}
-            onUpdate={(err: unknown, result: any) => {
+            onUpdate={( result: any) => {
               if (result) {
                 setScannedData(result.text);
               }

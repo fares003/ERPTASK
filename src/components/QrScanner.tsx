@@ -5,7 +5,7 @@ const QrScanner = () => {
   const [scanResult, setScanResult] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const handleScan = (err: unknown, result: any) => {
+  const handleScan = (result: any) => {
     if (result) {
       setScanResult(result.text);
       setError(null);
